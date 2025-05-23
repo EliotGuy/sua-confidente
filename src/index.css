@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-confidente-black text-confidente-light font-sans;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-medium leading-tight;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-[1920px];
+  }
+
+  .btn-primary {
+    @apply py-3 px-6 border border-confidente-gold text-confidente-gold hover:bg-confidente-gold hover:text-confidente-black transition-all duration-300 uppercase tracking-wider text-sm font-medium;
+  }
+
+  .section-title {
+    @apply text-2xl md:text-3xl font-serif text-confidente-gold leading-tight;
+  }
+
+  .fade-in {
+    @apply opacity-0 animate-[fadeIn_0.6s_ease-in_forwards];
+  }
+
+  .reason-item {
+    @apply py-3 border-t border-confidente-gold/30 text-sm md:text-base first:border-t-0;
+  }
+  
+  .feature-item {
+    @apply flex flex-col items-center text-center px-4 py-6;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
