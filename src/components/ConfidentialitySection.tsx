@@ -10,11 +10,11 @@ const ConfidentialitySection: React.FC = () => {
 
         <div className=" flex text-white w-full justify-center max-w-[1370px]">
           <div className="flex flex-col w-full max-w-[882px] sm:flex-row px-5 leading-none justify-between">
-            <div className="flex flex-row text-xl max-w-[704px] text-[16px] sm:text-[24px] font-inter gap-3 leading-[29px] items-start mb-[30px] sm:mb-0">
+            <div className="flex flex-row text-xl max-w-[704px] text-[16px] sm:text-[24px] font-inter gap-3 leading-[19px] sm:leading-[29px] items-start mb-[30px] sm:mb-0">
               &bull;
               <p>Seu tempo, sua conversa e sua identidade são preservados.</p>
             </div>
-            <div className="flex flex-row text-xl max-w-[704px] text-[16px] sm:text-[24px] font-inter gap-3 leading-[29px] items-start">
+            <div className="flex flex-row text-xl max-w-[704px] text-[16px] sm:text-[24px] font-inter gap-3 leading-[19px] sm:leading-[29px] items-start">
               &bull;
               <p>Você decide como se mostra. Nós cuidamos do ambiente.</p>
             </div>
