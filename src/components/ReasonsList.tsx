@@ -17,7 +17,7 @@ const ReasonsList: React.FC<ReasonsListProps> = ({ reasons }) => {
       />
 
       <div className="container relative w-full px-5">
-        <ul className="flex flex-col gap-[20px] sm:gap-[33px] leading-none max-w-[1440px] mx-auto sm:ml-[360px] sm:mr-[310px]">
+        <ul className="flex flex-col gap-[20px] sm:gap-[33px] leading-none max-w-[1440px] mx-auto xl:ml-[360px] xl:mr-[310px]">
           {reasons.map((reason, index) => (
             <li
               key={index}
@@ -26,7 +26,7 @@ const ReasonsList: React.FC<ReasonsListProps> = ({ reasons }) => {
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent'
               }}
-              className="flex flex-row font-semibold font-mukta text-[16px] sm:text-[36px] leading-[27px] sm:leading-[60px] md:text-[40px] uppercase gap-2"
+              className="flex flex-row font-semibold font-mukta leading-[27px] sm:leading-[60px] text-[16px] sm:text-[24px] md:text-[30] lg:text-[40px] uppercase gap-2"
             >
               &bull;
               <p>{reason}</p>

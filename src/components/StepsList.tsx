@@ -48,7 +48,7 @@ const StepsList: React.FC<StepsListProps> = ({ steps }) => {
       />
 
       <motion.div
-        className="flex flex-col items-center !p-10 sm:!py-[133px] gap-5 sm:gap-10 flex-1"
+        className="flex flex-col items-center px-[20px] sm:px-0 pt-[40px] pb-[80px] gap-5 sm:gap-10 flex-1"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
