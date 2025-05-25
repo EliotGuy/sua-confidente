@@ -36,11 +36,11 @@ const StepsList: React.FC<StepsListProps> = ({ steps }) => {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row 2xl:gap-16">
+    <div className="flex flex-col lg:flex-row lg:gap-16">
       <motion.img
         src="/assets/images/steplist.png"
         alt="Elegante mulher em vestido vermelho"
-        className="w-full 2xl:max-w-[805px] h-[526px] sm:h-[1080px] rounded-lg"
+        className="w-full lg:max-w-[850px] max-h-[1080px]  rounded-lg"
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
@@ -48,7 +48,7 @@ const StepsList: React.FC<StepsListProps> = ({ steps }) => {
       />
 
       <motion.div
-        className="flex flex-col items-center px-[20px] sm:px-0 pt-[40px] pb-[80px] gap-5 sm:gap-10 flex-1"
+        className="flex flex-col items-center px-[20px] sm:px-[20px] pt-[40px] 2xl:pt-[133px] pb-[80px] 2xl:pb-[134px] gap-5 sm:gap-10 flex-1"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -57,17 +57,17 @@ const StepsList: React.FC<StepsListProps> = ({ steps }) => {
         {steps.map((step) => (
           <motion.div
             key={step.number}
-            className="flex gap-5 sm:gap-10 max-w-[850px] w-full"
+            className="flex gap-5 sm:gap-[20px] max-w-[850px] w-full"
             variants={itemVariants}
           >
-            <p className="text-[20px] sm:text-[40px] text-[#F5F0EB] font-lora font-normal leading-none">
+            <p className="text-[20px] xl:text-[30px] 2xl:text-[40px] text-[#F5F0EB] font-lora font-normal leading-none">
               {step.number}.
             </p>
             <div className="flex flex-col sm:gap-[10px] max-w-[780px]">
-              <h3 className="text-xl sm:text-[40px] text-[#F5F0EB] font-lora font-normal leading-none">
+              <h3 className="text-xl xl:text-[30px] 2xl:text-[40px] text-[#F5F0EB] font-lora font-normal leading-none">
                 {step.title}
               </h3>
-              <p className="text-[14px] sm:text-[20px] font-inter bg-gradient-to-r from-[#E8D8B9] to-[#BDA77A] bg-clip-text text-transparent">
+              <p className="text-[14px] 2xl:text-[20px] font-inter bg-gradient-to-r from-[#E8D8B9] to-[#BDA77A] bg-clip-text text-transparent">
                 {step.description}
               </p>
             </div>
